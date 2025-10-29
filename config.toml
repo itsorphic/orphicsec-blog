@@ -1,0 +1,30 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "O R P H I C"
+theme = "PaperMod"
+
+[params]
+  env = "production"
+  description = "Security, Cloud & Productivity"
+  author = "O R P H I C"
+  
+  # Keep it simple for now
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+
+[menu]
+  [[menu.main]]
+    name = "Articles"
+    url = "/posts/"
+    weight = 10
+  
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
