@@ -358,3 +358,6 @@ body > header.header {
     color: #ffffff;
     border-bottom: 2px solid #ffffff;
 }
+
+img[alt=ejpt] { width: 100px; }
+img[alt=isc2cc] { width: 100px; }
