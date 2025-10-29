@@ -107,3 +107,67 @@ body > header.header {
         text-align: center;
     }
 }
+
+/* Homepage */
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.home-title h1 {
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+}
+
+.home-intro {
+    font-size: 1.2em;
+    color: #b0b0b0;
+    margin-bottom: 4rem;
+    line-height: 1.6;
+}
+
+.recent-posts {
+    border-top: 1px solid #333333;
+    padding-top: 2rem;
+}
+
+.recent-posts h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+}
+
+.post-item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #333333;
+}
+
+.post-item:last-child {
+    border-bottom: none;
+}
+
+.post-item h3 {
+    font-size: 1.3em;
+    margin: 0 0 0.5rem 0;
+}
+
+.post-item h3 a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.post-item h3 a:hover {
+    border-bottom-color: #ffffff;
+}
+
+.post-item time {
+    color: #b0b0b0;
+    font-size: 0.9em;
+}
