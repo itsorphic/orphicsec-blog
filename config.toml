@@ -5,10 +5,9 @@ theme = "PaperMod"
 
 [params]
   env = "production"
-  description = "Security, Cloud & Productivity"
+  description = "- - -"
   author = "O R P H I C"
   
-  # Keep it simple for now
   defaultTheme = "dark"
   disableThemeToggle = true
   ShowReadingTime = true
@@ -18,14 +17,24 @@ theme = "PaperMod"
 
 [menu]
   [[menu.main]]
-    name = "Articles"
+    name = "A R T I C L E S"
     url = "/posts/"
     weight = 10
   
   [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "C A T E G O R I E S"
+    url = "/categories/"
     weight = 20
+
+  [[menu.main]]
+    name = "T A G S"
+    url = "/tags/"
+    weight = 30
+  
+  [[menu.main]]
+    name = "A B O U T"
+    url = "/about/"
+    weight = 40
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

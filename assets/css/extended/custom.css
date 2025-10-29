@@ -338,3 +338,23 @@ body > header.header {
     color: #ffffff;
     border-color: #ffffff;
 }
+
+.not-found {
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.not-found h1 {
+    font-size: 6em;
+    margin: 0;
+}
+
+.not-found p {
+    font-size: 1.2em;
+    margin: 1rem 0;
+}
+
+.not-found a {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
