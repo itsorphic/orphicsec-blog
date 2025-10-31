@@ -15,6 +15,13 @@ theme = "PaperMod"
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
 
+  rssLimit = 20
+  copyright = "Copyright © 2025 O R P H I C"
+
+[author]
+  name = "orphic"
+  email = "orphicxbt@proton.me"
+
 [menu]
   [[menu.main]]
     name = "A R T I C L E S"
@@ -35,6 +42,14 @@ theme = "PaperMod"
     name = "A B O U T"
     url = "/about/"
     weight = 40
+
+[markup]
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = true
+    lineNumbersInTable = true
+    tabWidth = 2
+
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

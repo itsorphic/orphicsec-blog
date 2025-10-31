@@ -359,5 +359,21 @@ body > header.header {
     border-bottom: 2px solid #ffffff;
 }
 
-img[alt=ejpt] { width: 100px; }
-img[alt=isc2cc] { width: 100px; }
+.post-content blockquote {
+    position: relative;
+    border-left: 3px solid #ffffff;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    background: #0a0a0a;
+    color: #b0b0b0;
+}
+
+.post-content blockquote::before {
+    content: '"';
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    font-size: 4em;
+    color: #333333;
+    line-height: 1;
+}
