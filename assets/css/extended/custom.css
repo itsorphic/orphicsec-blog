@@ -1,3 +1,6 @@
+/* Import monospace font */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;900&display=swap');
+
 /* True Black Theme Override */
 :root {
     --theme: #000000;
@@ -23,8 +26,9 @@ footer,
     color: #ffffff !important;
 }
 
-/* Remove rounded corners */
+/* Apply monospace font globally and remove rounded corners */
 * {
+    font-family: 'JetBrains Mono', 'Courier New', 'Consolas', 'Monaco', monospace !important;
     border-radius: 0 !important;
 }
 
@@ -41,6 +45,7 @@ body > header.header {
 body {
     font-size: 16px;
     line-height: 1.8;
+    font-family: 'JetBrains Mono', 'Courier New', 'Consolas', 'Monaco', monospace !important;
 }
 
 /* Grid Header - WIDER */
