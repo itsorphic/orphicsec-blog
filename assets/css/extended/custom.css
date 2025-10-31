@@ -38,7 +38,12 @@ body > header.header {
     display: none;
 }
 
-/* Grid Header */
+body {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Grid Header - WIDER */
 .grid-header {
     background: #000000;
     border-bottom: 1px solid #333333;
@@ -108,9 +113,9 @@ body > header.header {
     }
 }
 
-/* Homepage */
+/* Homepage - WIDER */
 .home-content {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 4rem 2rem;
 }
@@ -172,9 +177,9 @@ body > header.header {
     font-size: 0.9em;
 }
 
-/* List Page */
+/* List Page - WIDER */
 .list-page {
-    max-width: 800px;
+    max-width: 1200px;  /* Increased from 800px */
     margin: 0 auto;
     padding: 0 2rem 4rem 2rem;
 }
@@ -237,11 +242,11 @@ body > header.header {
     line-height: 1.7;
 }
 
-/* Single Post */
+/* Single Post - MUCH WIDER */
 .post-single {
-    max-width: 800px;
+    max-width: 1400px;  /* Increased from 800px */
     margin: 0 auto;
-    padding: 0 2rem 4rem 2rem;
+    padding: 0 3rem 4rem 3rem;  /* Increased side padding */
 }
 
 .post-single .post-header {
@@ -376,4 +381,29 @@ body > header.header {
     font-size: 4em;
     color: #333333;
     line-height: 1;
+}
+
+/* FORCE WIDER LAYOUT - Override PaperMod defaults */
+.main {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+main {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* Ensure article containers use full width */
+article.post-single,
+.post-single {
+    max-width: 1400px !important;
+}
+
+.list-page {
+    max-width: 1200px !important;
+}
+
+.home-content {
+    max-width: 1200px !important;
 }
