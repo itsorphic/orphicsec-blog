@@ -1,24 +1,36 @@
 ---
-title: "A B O U T"
+title: "~/about"
+date: 2025-11-01
+draft: false
+ShowToc: false
 ---
 
-### > O R P H I C
+___  ___ ___  ___ ___ ___ _______ _   _ _______ _______ _______
+/ _ \|   |   |   |   |   / ___| __| | / /_   _|  ___| __|_   ___/
+| | | | | | | | | |  _  | /  |  || |/ /  | | | |_ | |   | |
+| || | | | | | | || | | _\ || < \  | | | || | | |_
+_/|||||_|||__||_\ || ||  ||/
 
-My real name is `Miguel Angelo Cardoso`. I'm currently a Security Engineer `@CriticalTechWorks | BMW Group`.
+## $ whoami
 
-I'l be using this site to share thoughts and silly ideas that might be useful.
+Offensive security researcher and exploit developer.
 
-## JOB EXPERIENCE
+### Interests
+- [+] Binary exploitation
+- [+] Web application security  
+- [+] CTF competitions
+- [+] Red team operations
+- [+] Tool development
 
-- Cloud Security Engineer @ CriticalTechWorks
-- Network and Security Analyst (NSOC) @ Jolera MSP
-- Junior Systems Administrator @ Trovisca
-- ~Multimedia Technician @ Porto Canal~
-- ~Prior Roles: IT Intern, Burguer Flipper, Chaos Practicioner~
+### Contact
+- GitHub: [@itsorphic](https://github.com/itsorphic)
+- Email: `security [at] orphicsec [dot] com`
 
-## CERTIFICATIONS
-- eJPT - Junior Penetration Tester
-- ISC2 - Certified in Cybersecurity
+### PGP
 
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+[Your key here]
+-----END PGP PUBLIC KEY BLOCK-----
 
-## Recent Training
+---
+*"The quieter you become, the more you can hear."*

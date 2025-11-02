@@ -1,414 +1,89 @@
-/* Import monospace font */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;900&display=swap');
+/* Minimal Dark Theme - Step 1 */
 
-/* True Black Theme Override */
 :root {
-    --theme: #000000;
-    --entry: #000000;
-    --primary: #ffffff;
-    --secondary: #b0b0b0;
-    --tertiary: #404040;
-    --content: #ffffff;
-    --hljs-bg: #000000;
-    --code-bg: #0a0a0a;
-    --border: #333333;
+    --bg: #000000;
+    --text: #ffffff;
+    --accent: #00ff00;
 }
 
-/* Force true black */
-body,
-.main,
-.list,
-header,
-footer,
-.post-entry,
-.post-single {
-    background: #000000 !important;
-    color: #ffffff !important;
-}
-
-/* Apply monospace font globally and remove rounded corners */
+/* Force monospace */
 * {
-    font-family: 'JetBrains Mono', 'Courier New', 'Consolas', 'Monaco', monospace !important;
+    font-family: 'Courier New', monospace !important;
+}
+
+/* Force black background */
+body {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+}
+
+/* Links - green and underlined */
+a {
+    color: var(--accent) !important;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--text) !important;
+}
+
+/* Headers - green */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent) !important;
+}
+
+/* Post titles - green */
+.post-title {
+    color: var(--accent) !important;
+}
+
+/* Post entries - READABLE */
+.post-entry,
+.first-entry {
+    background: var(--bg) !important;
+}
+
+/* All text in post entries should be white */
+.post-entry *,
+.first-entry * {
+    color: var(--text) !important;
+}
+
+/* Except titles - keep them green */
+.entry-title,
+.entry-title a {
+    color: var(--accent) !important;
+}
+
+/* Code blocks */
+pre,
+code {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+}
+
+pre {
+    border: 1px solid #333333 !important;
+    padding: 15px !important;
+}
+
+/* Inline code - green */
+:not(pre) > code {
+    color: var(--accent) !important;
+    background: var(--bg) !important;
+}
+
+/* Remove rounded corners */
+* {
     border-radius: 0 !important;
 }
 
-/* Clean borders */
-.post-entry {
-    border: 1px solid #333333 !important;
+/* Header border */
+.header {
+    border-bottom: 1px solid var(--accent);
 }
 
-/* Hide default PaperMod header */
-body > header.header {
-    display: none;
-}
-
-body {
-    font-size: 16px;
-    line-height: 1.8;
-    font-family: 'JetBrains Mono', 'Courier New', 'Consolas', 'Monaco', monospace !important;
-}
-
-/* Grid Header - WIDER */
-.grid-header {
-    background: #000000;
-    border-bottom: 1px solid #333333;
-    padding: 2rem 0;
-    margin-bottom: 3rem;
-}
-
-.header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-section {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.site-logo svg {
-    display: block;
-    color: #ffffff;
-}
-
-.site-title a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-.main-nav {
-    display: flex;
-    gap: 2rem;
-}
-
-.main-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    letter-spacing: 0.1em;
-    padding: 0.5rem 0;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.2s;
-}
-
-.main-nav a:hover {
-    border-bottom-color: #ffffff;
-}
-
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    
-    .main-nav {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-    }
-}
-
-/* Homepage - WIDER */
-.home-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-}
-
-.home-title h1 {
-    font-size: 3em;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 2rem;
-}
-
-.home-intro {
-    font-size: 1.2em;
-    color: #b0b0b0;
-    margin-bottom: 4rem;
-    line-height: 1.6;
-}
-
-.recent-posts {
-    border-top: 1px solid #333333;
-    padding-top: 2rem;
-}
-
-.recent-posts h2 {
-    font-size: 1.5em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 2rem;
-}
-
-.post-item {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #333333;
-}
-
-.post-item:last-child {
-    border-bottom: none;
-}
-
-.post-item h3 {
-    font-size: 1.3em;
-    margin: 0 0 0.5rem 0;
-}
-
-.post-item h3 a {
-    color: #ffffff;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-}
-
-.post-item h3 a:hover {
-    border-bottom-color: #ffffff;
-}
-
-.post-item time {
-    color: #b0b0b0;
-    font-size: 0.9em;
-}
-
-/* List Page - WIDER */
-.list-page {
-    max-width: 1200px;  /* Increased from 800px */
-    margin: 0 auto;
-    padding: 0 2rem 4rem 2rem;
-}
-
-.page-header {
-    margin-bottom: 3rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #333333;
-}
-
-.page-header h1 {
-    font-size: 2.5em;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin: 0;
-}
-
-.posts-list {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.posts-list .post-item {
-    padding-bottom: 3rem;
-    border-bottom: 1px solid #333333;
-}
-
-.posts-list .post-item:last-child {
-    border-bottom: none;
-}
-
-.posts-list .post-item h2 {
-    font-size: 1.5em;
-    font-weight: 700;
-    margin: 0 0 0.75rem 0;
-}
-
-.posts-list .post-item h2 a {
-    color: #ffffff;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-}
-
-.posts-list .post-item h2 a:hover {
-    border-bottom-color: #ffffff;
-}
-
-.post-meta {
-    display: flex;
-    gap: 0.5rem;
-    color: #b0b0b0;
-    font-size: 0.9em;
-    margin-bottom: 1rem;
-}
-
-.posts-list .post-item p {
-    color: #b0b0b0;
-    line-height: 1.7;
-}
-
-/* Single Post - MUCH WIDER */
-.post-single {
-    max-width: 1400px;  /* Increased from 800px */
-    margin: 0 auto;
-    padding: 0 3rem 4rem 3rem;  /* Increased side padding */
-}
-
-.post-single .post-header {
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #333333;
-}
-
-.post-single h1 {
-    font-size: 2.5em;
-    font-weight: 900;
-    line-height: 1.2;
-    margin: 0 0 1rem 0;
-}
-
-.post-content {
-    font-size: 1.05em;
-    line-height: 1.8;
-}
-
-.post-content h2 {
-    font-size: 1.75em;
-    margin-top: 2.5em;
-    margin-bottom: 1em;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #333333;
-}
-
-.post-content h3 {
-    font-size: 1.4em;
-    margin-top: 2em;
-    margin-bottom: 1em;
-}
-
-.post-content p {
-    margin-bottom: 1.5em;
-}
-
-.post-content a {
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
-    text-decoration: none;
-}
-
-.post-content ul,
-.post-content ol {
-    margin-bottom: 1.5em;
-    padding-left: 2em;
-}
-
-.post-content li {
-    margin-bottom: 0.75em;
-}
-
-.post-content code {
-    background: #0a0a0a;
-    padding: 0.2em 0.4em;
-    border: 1px solid #333333;
-    font-size: 0.9em;
-}
-
-.post-content pre {
-    background: #0a0a0a !important;
-    border: 1px solid #333333;
-    padding: 1.5rem;
-    overflow-x: auto;
-    margin: 2rem 0;
-}
-
-.post-content pre code {
-    background: transparent;
-    border: none;
-    padding: 0;
-}
-
-.post-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    padding-top: 2rem;
-    margin-top: 3rem;
-    border-top: 1px solid #333333;
-}
-
-.post-tags a {
-    color: #b0b0b0;
-    text-decoration: none;
-    border: 1px solid #333333;
-    padding: 0.4rem 0.8rem;
-    font-size: 0.85em;
-}
-
-.post-tags a:hover {
-    color: #ffffff;
-    border-color: #ffffff;
-}
-
-.not-found {
-    text-align: center;
-    padding: 6rem 2rem;
-}
-
-.not-found h1 {
-    font-size: 6em;
-    margin: 0;
-}
-
-.not-found p {
-    font-size: 1.2em;
-    margin: 1rem 0;
-}
-
-.not-found a {
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff;
-}
-
-.post-content blockquote {
-    position: relative;
-    border-left: 3px solid #ffffff;
-    padding: 1.5rem 2rem;
-    margin: 2rem 0;
-    background: #0a0a0a;
-    color: #b0b0b0;
-}
-
-.post-content blockquote::before {
-    content: '"';
-    position: absolute;
-    top: 0;
-    left: 1rem;
-    font-size: 4em;
-    color: #333333;
-    line-height: 1;
-}
-
-/* FORCE WIDER LAYOUT - Override PaperMod defaults */
-.main {
-    max-width: 100% !important;
-    width: 100% !important;
-}
-
-main {
-    max-width: 100% !important;
-    width: 100% !important;
-}
-
-/* Ensure article containers use full width */
-article.post-single,
-.post-single {
-    max-width: 1400px !important;
-}
-
-.list-page {
-    max-width: 1200px !important;
-}
-
-.home-content {
-    max-width: 1200px !important;
+/* Footer border */
+.footer {
+    border-top: 1px solid var(--accent);
 }
