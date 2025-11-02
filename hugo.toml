@@ -1,4 +1,5 @@
 baseURL = "https://orphicsec.com"
+theme = "PaperMod"
 title = "orphic"
 languageCode = "en-us"
 

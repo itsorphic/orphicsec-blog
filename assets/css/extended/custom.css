@@ -1,65 +1,53 @@
-/* Minimal Dark Theme - Step 1 */
-
+/* Override PaperMod's variables first */
 :root {
+    --theme: #000000 !important;
+    --entry: #000000 !important;
+    --primary: #ffffff !important;
+    --secondary: #ffffff !important;
+    --tertiary: #000000 !important;
+    --content: #ffffff !important;
+    --hljs-bg: #000000 !important;
+    --code-bg: #000000 !important;
+    --border: #333333 !important;
     --bg: #000000;
     --text: #ffffff;
     --accent: #ffffff;
 }
 
-/* Force monospace */
 * {
     font-family: 'Courier New', monospace !important;
+    border-radius: 0 !important;
 }
 
-/* Force black background */
-body {
-    background: var(--bg) !important;
-    color: var(--text) !important;
+body, .main, .list, .post-single {
+    background: #000000 !important;
+    color: #ffffff !important;
 }
 
-/* Links - green and underlined */
 a {
-    color: var(--accent) !important;
+    color: #ffffff !important;
     text-decoration: underline;
 }
 
-a:hover {
-    color: var(--text) !important;
+h1, h2, h3, h4, h5, h6, .post-title {
+    color: #ffffff !important;
 }
 
-/* Headers - green */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--accent) !important;
+.post-entry, .first-entry {
+    background: #000000 !important;
 }
 
-/* Post titles - green */
-.post-title {
-    color: var(--accent) !important;
+.post-entry *, .first-entry * {
+    color: #ffffff !important;
 }
 
-/* Post entries - READABLE */
-.post-entry,
-.first-entry {
-    background: var(--bg) !important;
+.entry-title, .entry-title a {
+    color: #ffffff !important;
 }
 
-/* All text in post entries should be white */
-.post-entry *,
-.first-entry * {
-    color: var(--text) !important;
-}
-
-/* Except titles - keep them green */
-.entry-title,
-.entry-title a {
-    color: var(--accent) !important;
-}
-
-/* Code blocks */
-pre,
-code {
-    background: var(--bg) !important;
-    color: var(--text) !important;
+pre, code {
+    background: #000000 !important;
+    color: #ffffff !important;
 }
 
 pre {
@@ -67,80 +55,88 @@ pre {
     padding: 15px !important;
 }
 
-/* Inline code - green */
 :not(pre) > code {
-    color: var(--accent) !important;
-    background: var(--bg) !important;
+    color: #ffffff !important;
 }
 
-/* Remove rounded corners */
-* {
-    border-radius: 0 !important;
-}
-
-/* Header border */
 .header {
-    border-bottom: 1px solid var(--accent);
+    background: #000000 !important;
+    border-bottom: 1px solid #ffffff;
 }
 
-/* Footer border */
 .footer {
-    border-top: 1px solid var(--accent);
+    background: #000000 !important;
+    border-top: 1px solid #ffffff;
 }
 
-/* ========================================
-   WIDER CONTENT
-   ======================================== */
-
-/* Wider main container */
 .main {
     max-width: 1000px;
 }
 
-/* Full width for post content */
-.post-single .post-content {
-    max-width: 100%;
+/* TAGS - Override rgb(55, 56, 62) */
+footer.post-footer,
+.post-footer,
+.entry-footer,
+.post-tags,
+ul.tags {
+    background: #000000 !important;
+    background-color: #000000 !important;
 }
 
-/* Mobile optimization */
+.post-single footer.post-footer a,
+.post-footer a,
+.entry-footer a,
+.post-tags a,
+ul.tags a {
+    background: #000000 !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+    padding: 5px 10px !important;
+    margin: 5px 5px 5px 0 !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+}
+
+.post-footer a:hover,
+.post-tags a:hover,
+ul.tags a:hover {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* NAVIGATION - Override rgb(55, 56, 62) */
+nav.paginav,
+.paginav,
+.post-nav {
+    background: #000000 !important;
+    background-color: #000000 !important;
+}
+
+nav.paginav a,
+nav.paginav .prev,
+nav.paginav .next,
+.paginav a,
+.paginav .prev,
+.paginav .next {
+    background: #000000 !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+    padding: 10px 20px !important;
+}
+
+nav.paginav a:hover,
+.paginav a:hover {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
 @media screen and (max-width: 768px) {
     .main {
         max-width: 95%;
         padding: 15px;
     }
-}
-
-/* Fix grey tags and buttons - make them visible */
-.post-tags a,
-.tags a {
-    color: var(--accent) !important;
-    text-decoration: none;
-    border: 1px solid var(--accent);
-    padding: 5px 10px;
-    margin: 5px 5px 5px 0;
-    display: inline-block;
-}
-
-.post-tags a:hover,
-.tags a:hover {
-    background: var(--accent);
-    color: var(--bg) !important;
-}
-
-/* Navigation buttons (Next/Previous) */
-.paginav a,
-.post-nav-links a,
-.pagination a {
-    background: var(--bg);
-    color: var(--accent) !important;
-    border: 1px solid var(--accent);
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-.paginav a:hover,
-.post-nav-links a:hover,
-.pagination a:hover {
-    background: var(--accent);
-    color: var(--bg) !important;
 }

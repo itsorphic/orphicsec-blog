@@ -1,5 +1,6 @@
 baseURL = "https://orphicsec.com"
 title = "orphic"
+theme = "PaperMod"
 languageCode = "en-us"
 
 [pagination]
