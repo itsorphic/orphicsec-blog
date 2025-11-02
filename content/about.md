@@ -4,16 +4,18 @@ date: 2025-11-01
 draft: false
 ShowToc: false
 ---
-                  __    _                     
+```
+                   __    _                     
    ____  _________/ /_  (_)______
   / __ \/ ___/ __ / __ \/ / ___/ 
  / /_/ / /  / /_/ / / / / / /_
  \____/_/  / .___/_/ /_/_/\___/   
           /_/  
+```
 
 ## $ whoami
 
-Offensive security researcher and exploit developer. dsadas
+Offensive security researcher and exploit developer.
 
 ### Interests
 - [+] Binary exploitation
