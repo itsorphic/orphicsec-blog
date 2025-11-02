@@ -19,6 +19,18 @@ languageCode = "en-us"
   defaultTheme = "dark"
   disableThemeToggle = true
 
+  [params.homeInfoParams]
+      Title = "orphicsec"
+      Content = """
+security researcher | exploit developer | ctf player
+
+breaking things professionally
+
+writing about offensive security
+
+occasionally building tools
+"""
+
 [menu]
   [[menu.main]]
     name = "Posts"

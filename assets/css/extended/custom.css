@@ -3,7 +3,7 @@
 :root {
     --bg: #000000;
     --text: #ffffff;
-    --accent: #00ff00;
+    --accent: #00ff99;
 }
 
 /* Force monospace */
@@ -86,4 +86,18 @@ pre {
 /* Footer border */
 .footer {
     border-top: 1px solid var(--accent);
+}
+
+/* ========================================
+   WIDER CONTENT
+   ======================================== */
+
+/* Wider main container */
+.main {
+    max-width: 1000px;
+}
+
+/* Full width for post content */
+.post-single .post-content {
+    max-width: 100%;
 }
