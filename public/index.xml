@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>orphicsec</title>
+    <title>orphic</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on orphicsec</description>
+    <description>Recent content on orphic</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Nov 2025 00:00:00 +0000</lastBuildDate>
@@ -20,7 +20,7 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;p&gt;/ _ |   |   |   |   |   / ___| _&lt;em&gt;| | / /&lt;/em&gt;   _|  __&lt;em&gt;| _&lt;em&gt;|&lt;/em&gt;   &lt;strong&gt;&lt;em&gt;/&#xA;| | | | | | | | | |  _  | /  |  || |/ /  | | | |&lt;/em&gt; | |   | |&#xA;| || | | | | | | || | | &lt;em&gt;\ || &amp;lt; \  | | | || | | |&lt;/em&gt;&#xA;&lt;em&gt;/|||||&lt;/em&gt;|||&lt;/strong&gt;||&lt;/em&gt;\ || ||  ||/&lt;/p&gt;&#xA;&lt;h2 id=&#34;-whoami&#34;&gt;$ whoami&lt;/h2&gt;&#xA;&lt;p&gt;Offensive security researcher and exploit developer.&lt;/p&gt;</description>
+      <description>&lt;pre&gt;&lt;code&gt;              __    _                     &#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;____  &lt;em&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&lt;em&gt;&lt;em&gt;/ /&lt;/em&gt;  (&lt;/em&gt;)&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&#xA;/ __ / &lt;em&gt;&lt;strong&gt;/ __ / __ / / &lt;em&gt;&lt;em&gt;&lt;em&gt;/&#xA;/ /&lt;/em&gt;/ / /  / /&lt;/em&gt;/ / / / / / /&lt;/em&gt;&#xA;_&lt;/strong&gt;&lt;/em&gt;/&lt;/em&gt;/  / .&lt;em&gt;&lt;em&gt;&lt;em&gt;/&lt;/em&gt;/ /&lt;/em&gt;/&lt;/em&gt;/___/&lt;br&gt;&#xA;/_/&lt;/p&gt;&#xA;&lt;h2 id=&#34;-whoami&#34;&gt;$ whoami&lt;/h2&gt;&#xA;&lt;p&gt;Offensive security researcher and exploit developer. dsadas&lt;/p&gt;&#xA;&lt;h3 id=&#34;interests&#34;&gt;Interests&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[+] Binary exploitation&lt;/li&gt;&#xA;&lt;li&gt;[+] Web application security&lt;/li&gt;&#xA;&lt;li&gt;[+] CTF competitions&lt;/li&gt;&#xA;&lt;li&gt;[+] Red team operations&lt;/li&gt;&#xA;&lt;li&gt;[+] Tool development&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;contact&#34;&gt;Contact&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/itsorphic&#34;&gt;@itsorphic&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;pgp&#34;&gt;PGP&lt;/h3&gt;&#xA;&lt;p&gt;&amp;mdash;&amp;ndash;BEGIN PGP PUBLIC KEY BLOCK&amp;mdash;&amp;ndash;&#xA;[Your key here]&#xA;&amp;mdash;&amp;ndash;END PGP PUBLIC KEY BLOCK&amp;mdash;&amp;ndash;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello World: Rebuilding in the Dark</title>

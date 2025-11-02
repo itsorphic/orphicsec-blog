@@ -4,16 +4,16 @@ date: 2025-11-01
 draft: false
 ShowToc: false
 ---
-
-___  ___ ___  ___ ___ ___ _______ _   _ _______ _______ _______
-/ _ \|   |   |   |   |   / ___| __| | / /_   _|  ___| __|_   ___/
-| | | | | | | | | |  _  | /  |  || |/ /  | | | |_ | |   | |
-| || | | | | | | || | | _\ || < \  | | | || | | |_
-_/|||||_|||__||_\ || ||  ||/
+                  __    _                     
+   ____  _________/ /_  (_)______
+  / __ \/ ___/ __ / __ \/ / ___/ 
+ / /_/ / /  / /_/ / / / / / /_
+ \____/_/  / .___/_/ /_/_/\___/   
+          /_/  
 
 ## $ whoami
 
-Offensive security researcher and exploit developer.
+Offensive security researcher and exploit developer. dsadas
 
 ### Interests
 - [+] Binary exploitation
@@ -24,7 +24,6 @@ Offensive security researcher and exploit developer.
 
 ### Contact
 - GitHub: [@itsorphic](https://github.com/itsorphic)
-- Email: `security [at] orphicsec [dot] com`
 
 ### PGP
 
