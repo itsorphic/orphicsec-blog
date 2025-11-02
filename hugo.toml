@@ -20,15 +20,11 @@ languageCode = "en-us"
   disableThemeToggle = true
 
   [params.homeInfoParams]
-      Title = "orphicsec"
+      Title = ">$ orphic"
       Content = """
-security researcher | exploit developer | ctf player
+self-proclaimed security researcher
 
-breaking things professionally
-
-writing about offensive security
-
-occasionally building tools
+building and sometimes breaking things professionally
 """
 
 [menu]
