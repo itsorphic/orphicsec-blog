@@ -10,6 +10,13 @@
     <atom:link href="http://localhost:1313/tags/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Post</title>
+      <link>http://localhost:1313/posts/doingthings/</link>
+      <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/doingthings/</guid>
+      <description>&lt;p&gt;After having a conversation with some coworkers recently, I’ve realized that I subconsciously do a lot to maximize my efficiency when trying to focus on a task. I decided to take inventory of all the strategies that have stuck with me over the years in an effort to distill them down into a few simple tips that I (and hopefully you) can remember for the next time you need to focus on something.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test Post</title>
       <link>http://localhost:1313/posts/test-post/</link>
       <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/test-post/</guid>
