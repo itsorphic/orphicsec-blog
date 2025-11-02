@@ -3,7 +3,7 @@ title: "hello, FR13ND !"
 date: 2025-11-02
 draft: false
 
-tags: ["helloworld", "blog"]
+tags: ["helloWorld", "blog"]
 ---
 
 I've spent enough time lurking in forums, reading other people's writeups, and mentally drafting responses I never posted. Figured it was time to actually contribute something.
